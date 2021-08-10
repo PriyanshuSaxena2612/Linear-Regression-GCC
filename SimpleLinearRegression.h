@@ -90,7 +90,6 @@ vector<double> linearRegressionMaths::predict(vector<T> &testData, double &M, do
     {
         for (T i = 0; i < testData.size(); i++)
         {
-            // cout << M * testData[i] + C << " ";
             temp[i] = M * testData[i] + C;
         }
     }
