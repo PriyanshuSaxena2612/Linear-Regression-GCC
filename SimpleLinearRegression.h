@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
+#include <numeric>
 
 using namespace std;
 
@@ -23,6 +24,6 @@ namespace linearRegressionMaths
 template <typename T>
 T linearRegressionMaths::mean(vector<T> data)
 {
-    T mean = std::accumulate(data.begin(), data.end()) / data.size();
+    T mean = std::accumulate(data.begin(), data.end(), 0.0) / data.size();
     return mean;
 }
