@@ -3,7 +3,8 @@ A library made in c++ for simple linear regression.
 ## How to use this library:
 Download SimpleLinearRegression.h and include the following library in your program.
 ```c++
-    #include<SimpleLinearRegression.h>
+    #include "SimpleLinearRegression.h"
+    using linearRegressionMaths;
 ```
 * Declare two double variables m and c in your main method.
 ```c++
